@@ -3,7 +3,7 @@ var wms_layers = [];
 
         var lyr_OpenStreetMap_0 = new ol.layer.Tile({
             'title': 'OpenStreetMap',
-            'type': 'base',
+            'type': 'vector',
             'opacity': 1.000000,
             
             
@@ -23,6 +23,7 @@ jsonSource_Frequency_1.addFeatures(features_Frequency_1);
 var lyr_Frequency_1 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Frequency_1, 
+                type: 'base',
                 style: style_Frequency_1,
                 interactive: true,
     title: 'Frequency<br />'
@@ -37,6 +38,7 @@ jsonSource_FrequencyBand_2.addFeatures(features_FrequencyBand_2);
 var lyr_FrequencyBand_2 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_FrequencyBand_2, 
+                type: 'base',
                 style: style_FrequencyBand_2,
                 interactive: true,
     title: 'Frequency Band<br />'
@@ -52,6 +54,8 @@ var lyr_CellEdgeMedian_3 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_CellEdgeMedian_3, 
                 style: style_CellEdgeMedian_3,
+                 
+                type: 'base',
                 interactive: true,
     title: 'Cell Edge/Median<br />'
         });
@@ -64,7 +68,8 @@ var jsonSource_ULMbpsLabels_4 = new ol.source.Vector({
 jsonSource_ULMbpsLabels_4.addFeatures(features_ULMbpsLabels_4);
 var lyr_ULMbpsLabels_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_ULMbpsLabels_4, 
+                source:jsonSource_ULMbpsLabels_4,  
+                type: 'base',
                 style: style_ULMbpsLabels_4,
                 interactive: true,
     title: 'UL Mbps Labels<br />'
@@ -78,7 +83,8 @@ var jsonSource_TestsbyULMbps_5 = new ol.source.Vector({
 jsonSource_TestsbyULMbps_5.addFeatures(features_TestsbyULMbps_5);
 var lyr_TestsbyULMbps_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_TestsbyULMbps_5, 
+                source:jsonSource_TestsbyULMbps_5,  
+                type: 'base',
                 style: style_TestsbyULMbps_5,
                 interactive: true,
     title: 'Tests by UL Mbps<br />\
@@ -98,7 +104,8 @@ var jsonSource_DLMbpsLabels_6 = new ol.source.Vector({
 jsonSource_DLMbpsLabels_6.addFeatures(features_DLMbpsLabels_6);
 var lyr_DLMbpsLabels_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_DLMbpsLabels_6, 
+                source:jsonSource_DLMbpsLabels_6,  
+                type: 'base',
                 style: style_DLMbpsLabels_6,
                 interactive: true,
     title: 'DL Mbps Labels<br />'
@@ -112,7 +119,8 @@ var jsonSource_TestsbyDLMbps_7 = new ol.source.Vector({
 jsonSource_TestsbyDLMbps_7.addFeatures(features_TestsbyDLMbps_7);
 var lyr_TestsbyDLMbps_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_TestsbyDLMbps_7, 
+                source:jsonSource_TestsbyDLMbps_7,  
+                type: 'base',
                 style: style_TestsbyDLMbps_7,
                 interactive: true,
     title: 'Tests by DL Mbps<br />\
@@ -132,7 +140,8 @@ var jsonSource_RSRPLabels_8 = new ol.source.Vector({
 jsonSource_RSRPLabels_8.addFeatures(features_RSRPLabels_8);
 var lyr_RSRPLabels_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_RSRPLabels_8, 
+                source:jsonSource_RSRPLabels_8,  
+                type: 'base',
                 style: style_RSRPLabels_8,
                 interactive: true,
     title: 'RSRP Labels<br />'
@@ -146,7 +155,8 @@ var jsonSource_TestsbyRSRP_9 = new ol.source.Vector({
 jsonSource_TestsbyRSRP_9.addFeatures(features_TestsbyRSRP_9);
 var lyr_TestsbyRSRP_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_TestsbyRSRP_9, 
+                source:jsonSource_TestsbyRSRP_9,  
+                type: 'base',
                 style: style_TestsbyRSRP_9,
                 interactive: true,
     title: 'Tests by RSRP<br />\
